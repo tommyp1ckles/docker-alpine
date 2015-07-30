@@ -1,5 +1,7 @@
 FROM alpine:latest
 
+MAINTAINER Tom Hadlaw
+
 RUN apk add --update postgresql curl
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-amd64"
 RUN chmod +x /usr/local/bin/gosu
