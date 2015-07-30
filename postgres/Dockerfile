@@ -1,6 +1,4 @@
-FROM alpine:3.1
-
-MAINTAINER Daniel Romero <infoslack@gmail.com>
+FROM alpine:latest
 
 RUN apk add --update postgresql curl
 RUN curl -o /usr/local/bin/gosu -SL "https://github.com/tianon/gosu/releases/download/1.2/gosu-amd64"
